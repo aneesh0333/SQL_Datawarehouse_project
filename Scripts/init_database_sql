@@ -1,0 +1,27 @@
+
+# Scripts
+1. Check Whether DB exist or not
+2. Create schemas in bronze, silve and gold layer
+
+# -- Check if the DB already exist 
+# -- Use in case of recreate or drop DB
+
+select 1 from sys.databases where name='DataWarehouse';
+
+# -- create database 'DataWarehouse'
+
+USE MASTER;
+CREATE DATABASE DataWarehouse;
+use DataWarehouse;
+GO
+
+
+# -- CREATE Bronze , Silver and Gold Schema
+Create Schema Bronze;
+GO
+
+Create Schema Silver;
+GO
+
+Create Schema Gold;
+GO
