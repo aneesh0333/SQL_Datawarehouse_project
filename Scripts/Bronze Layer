@@ -1,9 +1,9 @@
--- Bronze layer
+# Bronze layer
 
--- Check if the table(crm_cust_info) already exist then drop the table and then recreate again */
+# Check if the table(crm_cust_info) already exist then drop the table and then recreate again */
 IF OBJECT_ID('Bronze.crm_cust_info','U') is not NULL
 	drop table Bronze.crm_cust_info;
--- create table cust_info
+# create table cust_info
 
 CREATE table Bronze.crm_cust_info (
 	cst_id int ,
